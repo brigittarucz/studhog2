@@ -1,4 +1,4 @@
-let baseLink = 'http://petlatkea.dk/2019/students1991.json';
+let baseLink = 'https://petlatkea.dk/2019/students1991.json';
 let template = document.querySelector("template").content;
 
 // initialize empty array
