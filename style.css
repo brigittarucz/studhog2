@@ -1,0 +1,128 @@
+html {
+    background-color: #302624;
+    font-size: 10px;
+}
+
+@font-face {
+    font-family: 'Harry P';
+    src: url("HARRYP__.TTF");
+}
+
+h1 {
+    font-family: 'Harry P';
+    font-size: 5rem;
+    color: goldenrod;
+    -webkit-text-stroke-width: 0.01px;
+    -webkit-text-stroke-color: black;
+    text-align: center;
+}
+
+section.stud-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+section.control-buttons {
+    margin-bottom: 2rem;
+}
+
+section img,
+.stud-img-modal {
+    outline-style: solid;
+    outline-color: goldenrod;
+    outline-width: 0.5rem;
+    margin: 1rem;
+    width: 5rem;
+}
+
+
+p {
+    color: white;
+    font-size: 1.3rem;
+    list-style-type: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.houses-checkbox {
+    font-size: 1.3rem;
+    color: white;
+    display: inline-block;
+}
+
+.houses-checkbox * {
+    margin-left: 3rem;
+}
+
+.student:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/*modal*/
+
+.modal {
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+}
+
+.modal-content {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 15rem;
+    height: 25rem;
+    background-color: darkolivegreen;
+}
+
+.close {
+    font-size: 3rem;
+    float: right;
+    padding-right: 1rem;
+    font-weight: 900;
+}
+
+.close:hover {
+    cursor: pointer;
+}
+
+.student {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.hidden {
+    display: none;
+}
+
+.student-modal {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 150px 50px 50px;
+}
+
+.crest-modal {
+    grid-column: 1/span 1;
+    grid-row: 1/span 4;
+    height: 25rem;
+}
+
+.stud-img-modal {
+    grid-column: 2/span 1;
+    grid-row: 1/span 1;
+    margin-left: calc(50% - 25px);
+    margin-top: 50px;
+}
+
+.student-modal p {
+    text-align: center;
+}
+
+@media screen and (min-width: 650px) {
+    html {
+        font-size: 12px;
+    }
+}

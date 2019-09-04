@@ -1,0 +1,55 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Exercise Hogwarts 1991 </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <main>
+
+        <div id="elModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()"> &times; </span>
+                <article class="student-modal">
+                    <img src="images/Hufflepuff.jpg" alt="stud crest" class="crest-modal">
+                    <img src="images/harry.jpg" alt="stud image" class="stud-img-modal">
+                    <p class="fullName"> Titus Hibiscus</p>
+                    <p class="house-modal"> Hufflepuff </p>
+                </article>
+            </div>
+        </div>
+
+        <h1> Hogwarts 1991 </h1>
+        <section class="control-buttons">
+            <button class="sort-name-first" onclick="sortingFunction()"> First Name </button>
+            <button class="sort-name-last" onclick="sortingFunctionReverse()"> Last Name </button>
+            <button class="sort-house" onclick="sortingFunctionHouse()"> House </button>
+            <article class="houses-checkbox">
+                <input type="checkbox" value="Gryffindor" class="griff-check" checked onclick="filterFc()"> Gryffindor
+                <input type="checkbox" value="Hufflepuff" class="huffle-check" checked onclick="filterFc()"> Hufflepuff
+                <input type="checkbox" value="Ravenclaw" class="raven-check" checked onclick="filterFc()"> Ravenclaw
+                <input type="checkbox" value="Slytherin" class="slythe-check" checked onclick="filterFc()"> Slytherin
+            </article>
+        </section>
+        <section class="stud-list">
+
+        </section>
+
+        <template>
+            <article class="student" onclick="openModal(this)">
+                <img src="" alt="stud image">
+                <p class="fullName"> </p>
+                <p class="house"> </p>
+            </article>
+        </template>
+
+    </main>
+    <script src="hogw.js"> </script>
+</body>
+
+</html>
